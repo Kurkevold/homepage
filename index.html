@@ -14,11 +14,31 @@
         100% { transform: rotate(360deg); }
       }
     </style>
+    <script>
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      
+      if (password === "passord123") {
+        window.location.href = "https://https://lh3.googleusercontent.com/pw/AJFCJaWNqyfxGfb4vr_hTRnBHgmeesx0ThZpusmsClZJHcm3_583l3VxinlB_yrE6Tl0Fs0DN_ujR7xnIXu2d4H2MwccCSdBzqxqYI0fVa74muXeLRdRleisj_KK3IXH5TedR_W8RmNfBdsp7kcdSv6LwJjTJQ=w525-h933-s-no?authuser=0.com"; // Replace with your desired website
+      } else {
+        document.getElementById("error-message").textContent = "Incorrect password!";
+      }
+    }
+  </script>
   </head>
   <body>
     <h1>Åsmund Røisgård Kirkevold</h1>
     <p>Welcome to my homepage!</p>
     <p>Check out my <a href="https://drive.google.com/file/d/15HB2wVJk6lLcdzq_3Sb2hM3BV4GWJlqz/view?usp=sharing">CV</a></p>
     <div style="padding-top:59.000%;position:relative;"><iframe src="https://gifer.com/embed/yB" width="100%" height="100%" style='position:absolute;top:0;left:0;' frameBorder="0" allowFullScreen></iframe></div><p><a href="https://gifer.com"></a></p>
+     <form onsubmit="event.preventDefault(); checkPassword();">
+       <p> Type in your password Arne: </p>
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <button type="submit">Submit</button>
+  </form>
+    
+  
+  <p id="error-message"></p>
   </body>
 </html>
