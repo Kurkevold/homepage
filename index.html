@@ -2,13 +2,24 @@
 <html>
   <head>
     <title>Åsmund Røisgård Kirkevold</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      .main-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+      }
       .rotating-image {
         width: 200px;
         height: 200px;
         animation: rotate 5s linear infinite;
       }
-
       @keyframes rotate {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
@@ -18,27 +29,32 @@
     function checkPassword() {
       var password = document.getElementById("password").value;
       
-      if (password === "passord123") {
-        window.location.href = https://lh3.googleusercontent.com/pw/AJFCJaWNqyfxGfb4vr_hTRnBHgmeesx0ThZpusmsClZJHcm3_583l3VxinlB_yrE6Tl0Fs0DN_ujR7xnIXu2d4H2MwccCSdBzqxqYI0fVa74muXeLRdRleisj_KK3IXH5TedR_W8RmNfBdsp7kcdSv6LwJjTJQ=w525-h933-s-no?authuser=0.com"; // Replace with your desired website
+      if (password === "åsmunderkjekk") {
+        window.location.href = "https://www.youtube.com/watch?v=LtxxLTCFa88";
       } else {
         document.getElementById("error-message").textContent = "Incorrect password!";
       }
     }
-  </script>
+    </script>
   </head>
   <body>
-    <h1>Åsmund Røisgård Kirkevold</h1>
-    <p>Welcome to my homepage!</p>
-    <p>Check out my <a href="https://drive.google.com/file/d/1K9orntIiNvENJ5cnWFzDxNmYg7l-Lm9A/view?usp=sharing">CV</a></p>
-    <div style="padding-top:59.000%;position:relative;"><iframe src="https://gifer.com/embed/yB" width="20%" height="20%" style='position:absolute;top:0;left:0;' frameBorder="0" allowFullScreen></iframe></div><p><a href="https://gifer.com"></a></p>
-     <form onsubmit="event.preventDefault(); checkPassword();">
-       <p> Type in your password Arne: </p>
-    <label for="password">Password:</label>
-    <input type="password" id="password" required>
-    <button type="submit">Submit</button>
-  </form>
-    
-  
-  <p id="error-message"></p>
+    <div class="main-container">
+      <h1>Åsmund Røisgård Kirkevold</h1>
+      <p>Welcome to my homepage!</p>
+      <p>Check out my <a href="https://drive.google.com/file/d/1K9orntIiNvENJ5cnWFzDxNmYg7l-Lm9A/view?usp=sharing">CV</a></p>
+      <div style="padding-top:59.000%;position:relative;">
+        <iframe src="https://gifer.com/embed/yB" width="20%" height="20%" style='position:absolute;top:0;left:0;' frameBorder="0" allowFullScreen></iframe>
+      </div>
+      <p><a href="https://gifer.com"></a></p>
+      <form onsubmit="event.preventDefault(); checkPassword();">
+        <p> Type in your password Arne: </p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="error-message"></p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>
